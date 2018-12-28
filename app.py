@@ -34,7 +34,7 @@ def close_db(error):
 	if hasattr(g, 'sqlite_db'):
 		g.sqlite_db.close()
 		
-# entries stuff
+# views stuff
 @app.route('/')
 def index():
 	db = get_db()
